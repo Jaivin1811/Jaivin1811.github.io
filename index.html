@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jaivin | Industrial Engineer in Quality, Procurement and Lean Manufacturing</title>
+  <meta name="description" content="Jaivin is an industrial engineer (MSc, VŠB-TUO, Ostrava) with experience in quality engineering and procurement. Projects in OEE, metrology, Lean, SPC and supply chain analytics.">
+  <meta name="author" content="Jaivin">
+  <meta name="theme-color" content="#EDF0F1" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0F1519" media="(prefers-color-scheme: dark)">
+  <!-- TODO: replace with your real GitHub Pages address -->
+  <link rel="canonical" href="https://your-username.github.io/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Jaivin | Industrial Engineer">
+  <meta property="og:description" content="Quality engineering, procurement and Lean manufacturing. Projects, experience and thesis on workpiece probe accuracy.">
+  <meta property="og:url" content="https://your-username.github.io/">
+  <meta property="og:image" content="https://your-username.github.io/assets/img/og.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+
+  <!-- Set theme before first paint to avoid a flash -->
+  <script>
+    (function () {
+      var t = null;
+      try { t = localStorage.getItem('theme'); } catch (e) {}
+      if (!t) t = window.matchMedia && matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      document.documentElement.setAttribute('data-theme', t);
+      document.documentElement.classList.add('js');
+    })();
+  </script>
+
+  <link rel="preload" href="assets/fonts/barlow-semi-condensed-latin-600-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/source-serif-4-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Jaivin",
+    "jobTitle": "Industrial Engineer",
+    "alumniOf": [
+      { "@type": "CollegeOrUniversity", "name": "VŠB – Technical University of Ostrava" },
+      { "@type": "CollegeOrUniversity", "name": "Anna University" }
+    ],
+    "address": { "@type": "PostalAddress", "addressLocality": "Ostrava", "addressCountry": "CZ" },
+    "knowsAbout": ["Industrial engineering", "Quality management", "Lean manufacturing", "Supply chain", "Procurement", "Metrology", "Power BI", "Siemens NX"]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#about">Skip to content</a>
+
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="Jaivin, back to top"><span class="brand-dot" aria-hidden="true"></span>Jaivin</a>
+    <button class="menu-btn" id="menu-btn" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav id="nav" aria-label="Sections">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#learning">Learning</a>
+      <a href="#journey">Journey</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="theme-btn" id="theme-btn" aria-label="Switch to dark mode" title="Switch theme">
+      <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><circle cx="12" cy="12" r="8" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M12 4a8 8 0 0 0 0 16z" fill="currentColor"/></svg>
+    </button>
+  </header>
+
+  <div class="dimline" aria-hidden="true"><span class="dimline-mark" id="dimline-mark"></span></div>
+
+  <main id="top">
+    <!-- ============ Sheet 1: Hero ============ -->
+    <section class="sheet hero" data-sheet="Title sheet" aria-labelledby="hero-title">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <h1 id="hero-title">Measure it. Understand it. Make it better.</h1>
+          <p class="hero-lead">I'm Jaivin, an industrial engineer in Ostrava. I've inspected parts, compared suppliers and analysed machines, and I'm now studying how accurately a probe can tell you what you've made.</p>
+          <div class="hero-cta">
+            <a class="btn primary" href="#projects">See the projects</a>
+            <a class="btn" href="#contact">Get in touch</a>
+          </div>
+          <dl class="titleblock-static">
+            <div><dt>Name</dt><dd>Jaivin</dd></div>
+            <div><dt>Discipline</dt><dd>Industrial engineering</dd></div>
+            <div><dt>Focus</dt><dd>Quality, procurement, Lean, data</dd></div>
+            <div><dt>Location</dt><dd>Ostrava, CZ</dd></div>
+            <div class="wide"><dt>Status</dt><dd id="hero-status">Open to internships and junior roles in the EU</dd></div>
+          </dl>
+        </div>
+
+        <figure class="hero-demo">
+          <svg id="hero-part" viewBox="0 0 560 560" role="img" aria-label="Engineering drawing of a flanged plate. Move the pointer over it to move a measuring probe, and click an edge to record a point.">
+            <defs>
+              <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 1 10 5 0 9z" class="fill-dim"/></marker>
+            </defs>
+            <!-- centre lines -->
+            <g class="cl"><path d="M50 280H510M280 50V510"/><circle cx="280" cy="280" r="145" class="pcd"/></g>
+            <!-- part -->
+            <g class="part">
+              <circle class="draw" pathLength="1" cx="280" cy="280" r="203"/>
+              <circle class="draw" pathLength="1" cx="280" cy="280" r="58"/>
+              <circle class="draw" pathLength="1" cx="425" cy="280" r="17.4"/>
+              <circle class="draw" pathLength="1" cx="352.5" cy="405.6" r="17.4"/>
+              <circle class="draw" pathLength="1" cx="207.5" cy="405.6" r="17.4"/>
+              <circle class="draw" pathLength="1" cx="135" cy="280" r="17.4"/>
+              <circle class="draw" pathLength="1" cx="207.5" cy="154.4" r="17.4"/>
+              <circle class="draw" pathLength="1" cx="352.5" cy="154.4" r="17.4"/>
+            </g>
+            <!-- annotations -->
+            <g class="ann">
+              <!-- Ø140 -->
+              <path d="M77 290V532M483 290V532" class="ext"/>
+              <path d="M77 522H483" class="dimln" marker-start="url(#arr)" marker-end="url(#arr)"/>
+              <text x="280" y="514" text-anchor="middle">Ø140</text>
+              <!-- Ø40 H7 -->
+              <path d="M229.8 251 184.7 225H138" class="ldr"/>
+              <text x="104" y="221" >Ø40 H7</text>
+              <!-- datum A -->
+              <path d="M280 52V77" class="ldr"/>
+              <path d="M280 77 273.5 66h13z" class="fill-ink"/>
+              <rect x="267" y="28" width="26" height="24" class="frame"/>
+              <text x="280" y="46" text-anchor="middle">A</text>
+              <!-- FCF -->
+              <path d="M365 418 400 453" class="ldr"/>
+              <text x="400" y="436">6× Ø12</text>
+              <rect x="400" y="442" width="108" height="22" class="frame"/>
+              <path d="M424 442v22M476 442v22" class="frame"/>
+              <circle cx="412" cy="453" r="5.2" class="frame-sym"/><path d="M412 445.5v15M404.5 453h15" class="frame-sym"/>
+              <text x="450" y="457.5" text-anchor="middle">Ø0.1</text>
+              <text x="492" y="457.5" text-anchor="middle">A</text>
+            </g>
+            <g id="marks"></g>
+            <!-- probe: tip at (0,0) of the group -->
+            <g id="probe" transform="translate(430 120)" pointer-events="none">
+              <circle id="probe-ring" r="5" class="ring"/>
+              <path d="M0 -5V-52" class="stylus"/>
+              <rect x="-7" y="-66" width="14" height="16" class="probe-holder"/>
+              <rect x="-13" y="-112" width="26" height="46" class="probe-body"/>
+              <rect x="-13" y="-92" width="26" height="6" class="probe-band"/>
+              <path d="M0 -112V-170" class="stylus"/>
+              <circle id="probe-tip" r="5" class="tip"/>
+            </g>
+          </svg>
+          <figcaption>
+            <div class="readout">
+              <div><span class="k">X</span><span class="v" id="ro-x">0.00</span></div>
+              <div><span class="k">Y</span><span class="v" id="ro-y">0.00</span></div>
+              <div class="feat"><span class="k">Nearest edge</span><span class="v" id="ro-feat">–</span></div>
+            </div>
+            <p class="sr-only" id="probe-status" role="status"></p>
+            <p class="demo-hint" id="demo-hint">Move over the part. Click or tap near an edge to take a sample point.</p>
+            <div class="demo-actions">
+              <button class="btn small" id="probe-random" type="button">Take a sample point</button>
+              <button class="btn small ghost" id="probe-clear" type="button">Clear</button>
+            </div>
+            <table class="samples" id="samples" hidden>
+              <caption>Sampled points. Deviations are simulated for this demo, in micrometres (µm).</caption>
+              <thead><tr><th scope="col">#</th><th scope="col">Feature</th><th scope="col">X, Y (mm)</th><th scope="col">Δ radial</th></tr></thead>
+              <tbody></tbody>
+            </table>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ============ Sheet 2: About ============ -->
+    <section class="sheet" id="about" data-sheet="About" aria-labelledby="about-h">
+      <div class="wrap">
+        <h2 id="about-h">About me</h2>
+        <div class="about-grid" id="about-body"></div>
+      </div>
+    </section>
+
+    <!-- ============ Sheet 3: Experience ============ -->
+    <section class="sheet" id="experience" data-sheet="Experience" aria-labelledby="exp-h">
+      <div class="wrap">
+        <h2 id="exp-h">Work experience</h2>
+        <p class="sheet-intro">Two roles, one on each side of the supplier relationship: buying parts and inspecting them.</p>
+        <div class="ops" id="experience-list"></div>
+      </div>
+    </section>
+
+    <!-- ============ Sheet 4: Education ============ -->
+    <section class="sheet" id="education" data-sheet="Education" aria-labelledby="edu-h">
+      <div class="wrap">
+        <h2 id="edu-h">Education</h2>
+        <div class="edu-grid" id="education-body"></div>
+      </div>
+    </section>
+
+    <!-- ============ Sheet 5: Projects ============ -->
+    <section class="sheet" id="projects" data-sheet="Projects and research" aria-labelledby="proj-h">
+      <div class="wrap">
+        <h2 id="proj-h">Projects and research</h2>
+        <p class="sheet-intro">Open any project for the problem, objectives, method, implementation and results.</p>
+        <div class="filters" id="project-filters" role="group" aria-label="Filter projects by type"></div>
+        <div class="proj-grid" id="project-grid"></div>
+      </div>
+    </section>
+
+    <!-- ============ Sheet 6: Skills ============ -->
+    <section class="sheet" id="skills" data-sheet="Technical skills" aria-labelledby="skills-h">
+      <div class="wrap">
+        <h2 id="skills-h">Technical skills</h2>
+        <ul class="legend" aria-label="Legend">
+          <li><i class="mk applied" aria-hidden="true"></i>Applied at work or in a project</li>
+          <li><i class="mk studied" aria-hidden="true"></i>Studied in a course or on my own</li>
+          <li><i class="mk learning" aria-hidden="true"></i>Learning now</li>
+        </ul>
+        <div class="skills-grid" id="skills-body"></div>
+      </div>
+    </section>
+
+    <!-- ============ Sheet 7: Learning ============ -->
+    <section class="sheet" id="learning" data-sheet="Certifications and learning" aria-labelledby="learn-h">
+      <div class="wrap">
+        <h2 id="learn-h">Certifications and continuous learning</h2>
+        <div class="learn-grid" id="learning-body"></div>
+      </div>
+    </section>
+
+    <!-- ============ Sheet 8: Journey ============ -->
+    <section class="sheet" id="journey" data-sheet="Journey" aria-labelledby="jour-h">
+      <div class="wrap">
+        <h2 id="jour-h">Achievements and professional journey</h2>
+        <p class="sheet-intro">Laid out like a drawing revision table: each step, and what it added to what I can do.</p>
+        <div class="table-scroll" tabindex="0" role="region" aria-label="Revision table">
+          <table class="rev" id="journey-table">
+            <thead><tr><th scope="col">Rev</th><th scope="col">Milestone</th><th scope="col">What it added</th></tr></thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Sheet 9: Contact ============ -->
+    <section class="sheet" id="contact" data-sheet="Contact" aria-labelledby="contact-h">
+      <div class="wrap contact-grid">
+        <div>
+          <h2 id="contact-h">Let's talk</h2>
+          <p class="sheet-intro">For internships, junior roles, thesis discussions or a conversation about quality and supply chain work.</p>
+          <ul class="links" id="contact-links"></ul>
+        </div>
+        <form class="form" id="contact-form" novalidate>
+          <div class="field"><label for="f-name">Your name</label><input id="f-name" name="name" autocomplete="name" required></div>
+          <div class="field"><label for="f-email">Your email</label><input id="f-email" name="email" type="email" autocomplete="email" required></div>
+          <div class="field"><label for="f-msg">Message</label><textarea id="f-msg" name="message" rows="5" required></textarea></div>
+          <input class="hp" type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <button class="btn primary" type="submit">Send message</button>
+          <p class="form-status" id="form-status" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <p>Jaivin · Industrial engineer · Ostrava</p>
+      <p id="footer-updated"></p>
+    </div>
+  </footer>
+
+  <aside class="titleblock" aria-hidden="true">
+    <div class="tb-row"><span class="tb-k">Sheet</span><span class="tb-v" id="tb-sheet">1 / 9</span></div>
+    <div class="tb-row"><span class="tb-k">Title</span><span class="tb-v" id="tb-title">Title sheet</span></div>
+  </aside>
+
+  <dialog id="project-dialog" aria-labelledby="pd-title"></dialog>
+
+  <noscript>
+    <div class="wrap noscript">
+      <p><strong>Jaivin</strong>, industrial engineer in Ostrava. MSc Industrial Engineering at VŠB-TUO. Experience: purchasing and data sourcing intern at BSH Household Appliances; quality engineer and inspector at Aquasub Engineering. Skills: Lean, quality management, OEE, SPC, SAP MM, Power BI, Tableau, Excel, Siemens NX, Teamcenter. This site needs JavaScript to show the full portfolio.</p>
+    </div>
+  </noscript>
+
+  <script src="data/site.js" defer></script>
+  <script src="assets/js/diagrams.js" defer></script>
+  <script src="assets/js/probe.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
